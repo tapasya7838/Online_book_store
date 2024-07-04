@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+:root {
+    --color: rgb(166 115 215 / 63%);
+    --seccolor: rgb(84, 1, 1);
+    --tercolor: #ffe09a;
+}
+
+/* header styling */
+#head {
+    display: flex;
+    background-color: var(--color);
+    color: var(--seccolor);
+    height: 8vh;
+    border-radius: 3px;
+}
+
+#logo {
+    width: 15vw;
+    text-align: center;
+}
+
+#logo img {
+    width: 55px;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 4px 4px 5px 3px rgba(172, 73, 73, 0.497);
+}
+
+#webname {
+    width: 85vw;
+    text-align: center;
+    margin-top: 14px;
+}
+
+#webname h1 {
+    font-size: 1.4em;
+    text-decoration: var(--seccolor) underline;
+    font-family: cursive;
+}
+
+/* navigation bar styling */
+#navbar {
+    background-color: var(--tercolor);
+    height: 6vh;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin-top: 8px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--seccolor);
+}
+
+#navbar ul li a:hover {
+    text-decoration: var(--seccolor) solid underline;
+}
+
+/* styling the main section */
+.main {
+    display: flex;
+    min-height: 82vh;
+    width: 100vw;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    background-color: var(--tercolor);
+}
+
+.main ul li {
+    list-style: none;
+    margin: 30px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    color: var(--seccolor);
+}
+
+.main ul li a:hover {
+    border: 1px solid var(--seccolor);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-real-library-lighting-room-with-old-bookshelf-and-lamp-picture-image_2760207.jpg');
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 85vw;
+}
+
+.description div {
+    min-height: 70%;
+    max-width: 60%;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: #ffffff2a;
+}
+
+.description p:nth-child(1) {
+    margin-top: 10%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.description p:nth-child(2) {
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    font-size: 27px;
+    font-family: cursive;
+}
+
+/* styling the login page */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70%;
+    max-width: 90%;
+    background-color: rgb(84 1 1 / 19%);
+    gap: 3em;
+    color: var(--seccolor);
+    padding: 40px;
+    border: 2px solid var(--color);
+    border-radius: 6px;
+}
+
+.login h2 {
+    font-size: 1.6em;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+}
+
+.login div input {
+    font-size: 19px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid var(--seccolor);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px var(--color);
+}
+
+.login div label {
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.login div button {
+    padding: 8px;
+    font-size: 19px;
+    border: 1px solid var(--seccolor);
+    border-radius: 18px;
+    background-color: var(--color);
+    width: 100px;
+}
+
+.login div button a {
+    text-decoration: none;
+    color: var(--seccolor);
+    font-family: cursive;
+}
+
+.login div button a:active {
+    color: grey;
+}
+
+/* styling the registration section */
+.registration {
+    width: 85vw;
+    min-height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--seccolor);
+}
+
+.registration form {
+    display: flex;
+    min-height: 70vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid var(--color);
+    background-color: rgb(84 1 1 / 19%);
+    border-radius: 6px;
+    min-width: 70%;
+    padding: 8px;
+    gap: 3px;  
+}
+
+.registration label {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.registration input[type="submit"] {
+    padding: 8px;
+    font-size: 19px;
+    border: 1px solid var(--seccolor);
+    border-radius: 18px;
+    background-color: var(--color);
+    width: 100px;
+    color: var(--seccolor);
+    font-family: cursive;
+}
+
+.registration h2 {
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.registration input[type='radio'] {
+    font-family: cursive;
+}
+
+.registration span {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.registration input {
+    padding: 4px;
+    border: 1px solid var(--seccolor);
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    color: var(--seccolor);
+    font-family: cursive;
+}
+
+/* styling the catalogue and cart section*/
+.catalogue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+}
+
+.cart {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.cart p {
+    color: var(--seccolor);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.catalogue table, .cart table {
+    width: 100%;
+    text-align: center;
+}
+
+.catalogue table thead, .cart table thead {
+    color: var(--seccolor);
+    font-size: 1em;
+}
+
+.catalogue table tbody, .cart table tbody {
+    color: rgb(102 0 215 / 95%);
+}
+
+.catalogue th, .cart th {
+    padding: 9px;
+}
+
+.catalogue td, .cart td {
+    padding: 8px;
+}
+
+.catalogue table tbody tr td button, .cart table tbody tr td button {
+    background-color: #958484;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.catalogue table tbody tr td button:hover, .cart table tbody tr td button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-container h2 {
+    margin: 0 0 10px;
+}
+
+.footer-links {
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 370px) and (min-width: 334px) {
+    #navbar {
+        font-size: 14px;
+    }
+
+    #navbar ul li {
+        margin-top: 10px;
+    }
+
+    .main ul li {
+        font-size: 14px;
+    }
+
+    .description p:nth-child(1) {
+        font-size: 28px;
+    }
+
+    .description p:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .login h2 {
+        font-size: 1.3em;
+    }
+
+    .login div input {
+        font-size: 15px;
+    }
+
+    .login div label {
+        font-size: 20px;
+        margin-left: 4px;
+    }
+
+    .login div button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    #navbar {
+        font-size: 12px;
+    }
+
+    #navbar ul li {
+        margin-top: 13px;
+    }
+
+    .main ul li {
+        font-size: 12px;
+    }
+
+    .description p:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .description p:nth-child(2) {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    #webname h1 {
+        font-size: 1.2em;
+    }
+
+    #logo img {
+        width: 40px;
+    }
+
+    .login h2 {
+        font-size: 1.2em;
+        gap: 5em;
+    }
+
+    .login div input {
+        font-size: 11px;
+    }
+
+    .login div label {
+        font-size: 18px;
+        margin-left: 4px;
+    }
+
+    .login div button {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 628px) and (min-width: 351px) {
+    .catalogue table td, .catalogue table th, .cart table td, .cart table th {
+        padding: 2px;
+        font-size: 11px;
+    }
+    .catalogue table td button, .cart table td button {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .catalogue table td, .catalogue table th, .cart table td, .cart table th {
+        padding: 0px;
+        font-size: 8px;
+    }
+    .catalogue table td button, .cart table td button {
+        font-size: 8px;
+    }
+    .registration input[type="submit"] {
+        font-size: 12px;
+    }
+}

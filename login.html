@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="head">
+        <div id="logo"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOreCOFil3ASycm5HX4gxMlFwxMwUa2r-qg&usqp=CAU"
+                alt="logo"></div>
+        <div id="webname">
+            <h1>Online Book Store</h1>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <ul>
+            <li><a href="cse.html">CSE</a></li>
+            <li><a href="ece.html">ECE</a></li>
+            <li><a href="eee.html">EEE</a></li>
+            <li><a href="civil.html">CIVIL</a></li>
+        </ul>
+        <div class="login-form">
+            <div class="login">
+                <div class="box box1">
+                    <h2>Login</h2>
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="box box2">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password"
+                        title="Please enter a password of 8-10 characters. It must have atleast 1 uppercase, 1 lowercase and 1 special character."
+                        pattern="{8,10}" required>
+                </div>
+                <div class="box box3">
+                    <button><a href="home.html">Submit</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <h2>Online Book Store</h2>
+            <p>&copy; 2023 Online Book Store - All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
